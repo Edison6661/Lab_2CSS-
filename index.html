@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Styles and Elements</title>
+
+<!-- External CSS links -->
+<link rel="stylesheet" href="https://kit.fontawesome.com/26e3ee569a.js">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+  /* Global link styles */
+  a {
+    color: hotpink;
+    text-decoration: none;
+  }
+  a:link {
+    color: red;
+  }
+  a:visited {
+    color: green;
+  }
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
+  a:active {
+    color: blue;
+    text-decoration: underline;
+  }
+  /* Specific link styles */
+  a.one:link, a.one:visited {
+    color: #ff0000;
+  }
+  a.one:hover {
+    color: #ffcc00;
+  }
+  a.two:hover {
+    font-size: 150%;
+  }
+  a.three:hover {
+    background: #66ff66;
+  }
+  a.four:hover {
+    font-family: monospace;
+  }
+  a.five:hover {
+    text-decoration: underline;
+  }
+  /* Cursor styles */
+  span {
+    cursor: auto;
+    display: block;
+  }
+  /* List styles */
+  ul.a {
+    list-style-type: circle;
+    list-style-position: outside;
+  }
+  ul.b {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+  ul {
+    list-style-image: url('sqpurple.gif');
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.a {
+    list-style: square inside url("sqpurple.gif");
+  }
+  ol {
+    background: #ff9999;
+    padding: 20px;
+  }
+  ul {
+    background: #3399ff;
+    padding: 20px;
+  }
+  ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+  }
+  ul li {
+    background: #cce5ff;
+    margin: 5px;
+  }
+  /* Table styles */
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table {
+    width: 100%;
+  }
+  th {
+    height: 70px;
+    background-color: #04AA6D;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  td {
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {
+    background-color: coral;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+
+<style>
+  /* CSS styles */
+  p, h1, h2, div {
+    text-align: center;
+    color: red;
+  }
+  .center {
+    text-align: center;
+    color: red;
+  }
+  * {
+    text-align: center;
+    color: blue;
+  }
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    background-color: green;
+  }
+  div {
+    width: 300px;
+    padding: 25px;
+    border: 1px solid red;
+    margin: auto;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Font Awesome icons -->
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+<!-- Bootstrap Glyphicons -->
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+<!-- Material Icons -->
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+<!-- Links -->
+<a href="#" class="one">Link One</a>
+<a href="#" class="two">Link Two</a>
+<a href="#" class="three">Link Three</a>
+<a href="#" class="four">Link Four</a>
+<a href="#" class="five">Link Five</a>
+
+<!-- Cursor examples -->
+<span style="cursor: auto">auto</span>
+<span style="cursor: crosshair">crosshair</span>
+<span style="cursor: default">default</span>
+<span style="cursor: e-resize">e-resize</span>
+<span style="cursor: help">help</span>
+<span style="cursor: move">move</span>
+<span style="cursor: n-resize">n-resize</span>
+<span style="cursor: ne-resize">ne-resize</span>
+<span style="cursor: nw-resize">nw-resize</span>
+<span style="cursor: pointer">pointer</span>
+<span style="cursor: progress">progress</span>
+<span style="cursor: s-resize">s-resize</span>
+<span style="cursor: se-resize">se-resize</span>
+<span style="cursor: sw-resize">sw-resize</span>
+<span style="cursor: text">text</span>
+<span style="cursor: w-resize">w-resize</span>
+<span style="cursor: wait">wait</span>
+
+<!-- Lists -->
+<ul class="a">
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ul>
+<ul class="b">
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ul>
+<ol class="c">
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ol>
+<ol class="d">
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ol>
+
+<!-- Table -->
+<div style="overflow-x:auto;">
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+</div>
+
+<!-- HTML elements -->
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">
